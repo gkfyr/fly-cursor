@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Fly Cursor · Connectome Lab",
+  "version": "0.1.2",
+  "description": "MaleCNS 실제 신경 연결로 현재 웹사이트 위 초파리 가상 커서를 움직입니다.",
+  "minimum_chrome_version": "116",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "host_permissions": [
+    "http://127.0.0.1/*"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Fly Cursor"
+  },
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA3hux0q5RZ7WwdsBrWn/OQWGDaxp0dQ7QyffThNTQwSGtBYlsTG0b+ETatGpiAAANuvSdYQaM5e2mAeJb2dZ6nveoTKu/cu8X/ytZ/tl5gszD9bHLajPBtMc0IfYfjtk2OmcTfuwr+lxxhYJr3hsT4qL06rJ7Z5ml+RpJtqdHEDV+HyEIPSRA5tap3CWJ+P1YNzzXZsFTrRQuldcw++XZI4+Ns6hohv5atVs+P/KMCIXOnaNP1xcxT5MzBdhzZbHcyEOG8xys/1oyKB2IpyYyKbYibHY3vQ74naos005Y/4tj/LETInyYuERm7dANM3YnoNRLLyPc4HCyWq15zqbYawIDAQAB"
+}
